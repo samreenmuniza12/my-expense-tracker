@@ -50,7 +50,7 @@ const App = () => {
      </ThemeProvider>
  )
 }
-
+console.log("Client ID:", import.meta.env.VITE_GOOGLE_CLIENT_ID);
 export default App
 
 const Root = () => {
