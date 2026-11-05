@@ -49,7 +49,7 @@ const Login = () => {
 
   return (
     <AuthLayout>
-      <div className="w-full max-w-sm mx-auto lg:w-[70%] h-3/4 md:h-full flex flex-col justify-center px-4">
+      <div className="w-full max-w-sm mx-auto lg:w-[70%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center px-4">
 
         <div className="mb-9">
           <span className="inline-block w-8 h-1 bg-emerald-400 rounded-full mb-4" />
