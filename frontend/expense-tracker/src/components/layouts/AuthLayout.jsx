@@ -1,7 +1,7 @@
 import React from 'react'
 import { LuTrendingUpDown, LuArrowUpRight, LuArrowDownRight } from 'react-icons/lu'
 
-const AuthLayout = ({ children }) => {
+const AuthLayOut = ({ children }) => {
   return (
     <div className="flex">
       <div className="w-screen h-screen md:w-[60vw] px-12 pt-8 pb-12 bg-emerald-50">
@@ -99,4 +99,4 @@ const AuthLayout = ({ children }) => {
   )
 };
 
-export default AuthLayout
+export default AuthLayOut

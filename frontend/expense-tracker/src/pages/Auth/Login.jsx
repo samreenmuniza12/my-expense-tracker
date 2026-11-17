@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import AuthLayout from '../../components/layouts/AuthLayOut'
+import AuthLayOut from '../../components/layouts/AuthLayOut'
 import { useNavigate, Link } from 'react-router-dom'
 import Input from '../../components/Inputs/Input'
 import { validateEmail } from '../../utils/helper'
@@ -48,7 +48,7 @@ const Login = () => {
   }
 
   return (
-    <AuthLayout>
+    <AuthLayOut>
       <div className="w-full max-w-sm mx-auto lg:w-[70%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center px-4">
 
         <div className="mb-9">
@@ -108,7 +108,7 @@ const Login = () => {
           </p>
         </form>
       </div>
-    </AuthLayout>
+    </AuthLayOut>
   )
 }
 
