@@ -1,12 +1,14 @@
 import { GoogleLogin } from "@react-oauth/google";
 import { useState } from "react";
+import { BASE_URL } from "../../utils/apiPaths";
+
 
 function GoogleLoginButton({ onLoginSuccess, buttonText = "signin_with" }) {
   const [error, setError] = useState(null);
 
   const handleSuccess = async (credentialResponse) => {
     try {
-      const res = await fetch("http://localhost:8000/api/v1/auth/google", {
+      const res = await fetch(`${BASE_URL}/api/v1/auth/google`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ credential: credentialResponse.credential }),
